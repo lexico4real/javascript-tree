@@ -1,0 +1,7 @@
+class Pizza {
+
+  constructor() {
+    
+  }
+
+}

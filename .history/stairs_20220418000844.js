@@ -1,0 +1,1 @@
+const stairs = 0
