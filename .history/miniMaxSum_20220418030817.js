@@ -2,19 +2,17 @@ function miniMaxSum(arr) {
   // Write your code here
   let min = 0;
   let max = 0;
-  let count = 4;
+  count = 4;
 
-  arr.sort(function (a, b) {
-    return a - b;
-  });
+    arr.sort(function(a, b){return a-b});
 
   for (let i = 0; i < arr.length; i++) {
     if (count === 0) {
       break;
     }
     max += arr[i];
-    min += arr[arr.length - count];
-    count--;
+    min += arr[arr.length - count]
+      count--;
   }
   console.log(max, min);
 }

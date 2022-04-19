@@ -2,7 +2,7 @@ function miniMaxSum(arr) {
   // Write your code here
   let min = 0;
   let max = 0;
-  let count = 4;
+  count = 4;
 
   arr.sort(function (a, b) {
     return a - b;
