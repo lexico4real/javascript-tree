@@ -42,6 +42,7 @@ class Employee {
     }
 
     for (const subordinate of this.subordinates) {
+      console.log(subordinate);
       const subordinatesThatMakeOver =
         subordinate.employeesThatMakeOver(amount); // 3
       employees = employees.concat(subordinatesThatMakeOver);
@@ -131,6 +132,6 @@ karla.addSubordinate(chandler);
 
 // console.log(craig.numberOfPeopleToCEO); // 1
 
-// console.log(ada.employeesThatMakeOver(1000000)); // [ Employee { name: 'Craig', title: 'VP Software', salary: 1000000, boss: Employee { name: 'Ada', title: 'CEO', salary: 3000000, boss: null, subordinates: [], __proto__: Employee.prototype }, __proto__: Employee.prototype }, Employee { name: 'Arvinder', title: 'Chief Design Officer', salary: 1000000, boss: Employee { name: 'Ada', title: 'CEO', salary: 3000000, boss: null, subordinates: [], __proto__: Employee.prototype }, __proto__: Employee.prototype }, Employee { name: 'Angela', title: 'VP Retail', salary: 1000000, boss: Employee { name: 'Ada', title: 'CEO', salary: 3000000, boss: null, subordinates: [], __proto__: Employee.prototype }, __proto__: Employee.prototype }, Employee { name: 'Phil', title: 'VP Marketing', salary: 1000000, boss: Employee { name: 'Ada', title: 'CEO', salary: 3000000, boss: null, subordinates: [], __proto__: Employee.prototype }, __proto__: Employee.prototype } ]
+console.log(ada.employeesThatMakeOver(1000000)); // [ Employee { name: 'Craig', title: 'VP Software', salary: 1000000, boss: Employee { name: 'Ada', title: 'CEO', salary: 3000000, boss: null, subordinates: [], __proto__: Employee.prototype }, __proto__: Employee.prototype }, Employee { name: 'Arvinder', title: 'Chief Design Officer', salary: 1000000, boss: Employee { name: 'Ada', title: 'CEO', salary: 3000000, boss: null, subordinates: [], __proto__: Employee.prototype }, __proto__: Employee.prototype }, Employee { name: 'Angela', title: 'VP Retail', salary: 1000000, boss: Employee { name: 'Ada', title: 'CEO', salary: 3000000, boss: null, subordinates: [], __proto__: Employee.prototype }, __proto__: Employee.prototype }, Employee { name: 'Phil', title: 'VP Marketing', salary: 1000000, boss: Employee { name: 'Ada', title: 'CEO', salary: 3000000, boss: null, subordinates: [], __proto__: Employee.prototype }, __proto__: Employee.prototype } ]
 
-console.log(craig.totalEmployees); // 7
+// console.log(craig.totalEmployees); // 7
